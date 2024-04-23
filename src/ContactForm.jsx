@@ -17,7 +17,7 @@ const handleSubmit=async(e)=>{
   if(data.fname===""|| data.lname==="" || data.email==="" || data.message===""){
     toast.error("Pleas fill all these fields");
   }else{
-  let response=  await  fetch("http://localhost:3006/contacts",{
+  let response=  await  fetch("https://portfolio-backend-puce.vercel.app/contacts",{
     method:"POST",
     headers: {
       "Content-Type": "application/json",
